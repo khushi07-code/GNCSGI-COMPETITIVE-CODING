@@ -11,21 +11,8 @@ int main()
         cin>>A>>B;
         for(int i=1;A!=B&&A<B;i++)
         {
-              if(i%2!=0)
-              {
-                A=A+1;
-              }
-              else{
-                A=A+2;
-              }
+            (i%2!=0)?A=A+1:A=A+2;
         }
-        if(A==B)
-            {
-                cout<<"YES"<<endl;
-            }
-        else{
-            cout<<"NO"<<endl;
-        }
-        
+        (A==B)?cout<<"YES":cout<<"NO"<<endl;
     }
 }
